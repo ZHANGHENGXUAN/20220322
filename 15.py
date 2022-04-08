@@ -1,0 +1,14 @@
+#15
+test=input("請輸入數字：")
+test1=list(map(int,test))
+test2=test1[0]
+test3=test1[1]
+test1[0]=test1[2]
+test1[2]=test2
+test1[1]=test1[3]
+test1[3]=test3
+a=(test1[0]+7)%10
+b=(test1[1]+7)%10
+c=(test1[2]+7)%10
+d=(test1[3]+7)%10
+print("輸出加密後的數字為：{0}{1}{2}{3}".format(a,b,c,d))

@@ -1,0 +1,6 @@
+n=input("請輸入數字：").split(" ")
+list5801=list(map(int,n))
+max=sorted(list5801,reverse=True)
+min=sorted(list5801,reverse=False)
+print("最大的3個數字為：",max[0],max[1],max[2])
+print("最小的3個數字為：",min[2],min[1],min[0])
